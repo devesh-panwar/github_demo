@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuickChat</string>
+
+<string-array name="spinnerlist">
+
+    <item>select Algorithm </item>
+    <item>MD5</item>
+    <item>SHA125</item>
+
+</string-array>
+
+</resources>

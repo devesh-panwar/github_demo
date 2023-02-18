@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/icons_done"
+        android:padding="@dimen/_5sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_gravity="right"
+        android:id="@+id/save"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/setting_image"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/profile"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_name"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/app_name"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/_20sdp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="hey there i'am using this chat app waana try this"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="@dimen/_10sdp"
+        android:background="#9E9B9B"
+        android:id="@+id/setting_status"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:text="whch security protocol used you want to use during messaging"
+            android:padding="@dimen/_20sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_black"
+            android:id="@+id/algo"
+            />
+
+        <Spinner
+            android:id="@+id/algo_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_below="@id/algo"
+
+            android:popupBackground="#F2ECEC"
+            android:spinnerMode="dialog"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
